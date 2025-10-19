@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Wizards - Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <article class="profile-card" data-testid="test-profile-card">
+
+        <div class="header-section">
+            <figure class="avatar-container">
+                <img src="https://i.pravatar.cc/150?img=68" 
+                     alt="Profile picture of Sarah Johnson, a software developer." 
+                     data-testid="test-user-avatar" 
+                     class="avatar">
+                <figcaption class="sr-only">Sarah Johnson's profile avatar.</figcaption>
+            </figure>
+
+            <header class="user-info">
+                <h2 data-testid="test-user-name">Sarah Johnson</h2>
+                <time data-testid="test-user-time" id="user-time-ms">Loading...</time>
+            </header>
+        </div>
+        
+        <div class="main-content">
+            
+            <p data-testid="test-user-bio" class="bio">
+                Passionate frontend wizard with a love for semantic HTML, modern CSS (especially Grid!), and clean vanilla JavaScript. I focus on building accessible and responsive user interfaces that perform flawlessly across all devices.
+            </p>
+
+            <nav class="social-links" data-testid="test-user-social-links" aria-label="User's social media links">
+                <ul>
+                    <li>
+                        <a href="https://github.com/ibrowebdev/hng-frontend-stage-0" target="_blank" rel="noopener noreferrer" 
+                           data-testid="test-user-social-github">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer" 
+                           data-testid="test-user-social-twitter">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/yusuf-ibrohim-aa291a351/" target="_blank" rel="noopener noreferrer" 
+                           data-testid="test-user-social-linkedin">LinkedIn</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="hobbies-section">
+                <h3>Hobbies 🎮</h3>
+                <ul data-testid="test-user-hobbies" class="list-container">
+                    <li>Competitive Coding</li>
+                    <li>Digital Art</li>
+                    <li>Baking Sourdough</li>
+                    <li>Hiking</li>
+                </ul>
+            </section>
+
+            <section class="dislikes-section">
+                <h3>Dislikes ❌</h3>
+                <ul data-testid="test-user-dislikes" class="list-container">
+                    <li>Non-semantic HTML</li>
+                    <li>Global CSS resets</li>
+                    <li>Poor accessibility</li>
+                    <li>Un-commented legacy code</li>
+                </ul>
+            </section>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
